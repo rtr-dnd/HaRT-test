@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - physicalTarget
+  - virtualTarget
+  - virtualHand
+  - realHand
   layers:
   - Default
   - TransparentFX
@@ -13,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Physical/Hand
+  - Physical/Object
+  - Virtual/Hand
+  - Virtual/Object
+  - Visualization
   - 
   - 
   - 
