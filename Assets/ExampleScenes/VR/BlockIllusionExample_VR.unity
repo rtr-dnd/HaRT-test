@@ -1984,6 +1984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HaRT_VR
       objectReference: {fileID: 0}
+    - target: {fileID: 5565381506338032629, guid: a441762dcaf443644813f8186313cdf5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a336f7ea65c5a2640a7de1bf2893cd05, type: 2}
     - target: {fileID: 6024233356327886676, guid: a441762dcaf443644813f8186313cdf5,
         type: 3}
       propertyPath: m_RootOrder
@@ -2073,6 +2078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407440559644861539, guid: a441762dcaf443644813f8186313cdf5,
+        type: 3}
+      propertyPath: movement
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7407440559644861539, guid: a441762dcaf443644813f8186313cdf5,
         type: 3}
