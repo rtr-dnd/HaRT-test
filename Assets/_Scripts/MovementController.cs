@@ -2,7 +2,7 @@
 using System;
 using HR_Toolkit;
 // COMMENT OUT IF NOT USING LEAP
-//using Leap.Unity;
+using Leap.Unity;
 using UnityEngine;
 
 
@@ -73,15 +73,15 @@ public class MovementController : MonoBehaviour
                 realHand.transform.position = trackedHand.transform.position;
                 realHand.transform.rotation = trackedHand.transform.rotation;
                 break;
-            //case Movement.Leap:
-            //    // works only if the Leap Motion Unity Package is installed!
-            //    // if you want to use the Leap Motion Setup, please uncomment the following two lines. If you are aware
-            //    // of a more elegant way to include this, feel free to send us a mail 
+            case Movement.Leap:
+                // works only if the Leap Motion Unity Package is installed!
+                // if you want to use the Leap Motion Setup, please uncomment the following two lines. If you are aware
+                // of a more elegant way to include this, feel free to send us a mail 
 
-            //    // COMMENT OUT IF NOT USING LEAP
-            //    if (trackedHand.GetComponent<CapsuleHand>().GetLeapHand().GetPalmPose() == null) break;
-            //    obj.transform.position = trackedHand.GetComponent<CapsuleHand>().GetLeapHand().GetPalmPose().position;
-            //    break;
+                // COMMENT OUT IF NOT USING LEAP
+                if (trackedHand.GetComponent<CapsuleHand>().GetLeapHand().GetPalmPose() == null) break;
+                obj.transform.position = trackedHand.GetComponent<CapsuleHand>().GetLeapHand().GetPalmPose().position;
+                break;
         }
     }
 
